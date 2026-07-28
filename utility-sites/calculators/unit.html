@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="unit.css">
+</head>
+<body>
+    <header>
+        <h1>Unit Converter</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="currency.html">Currency Converter</a></li>
+            <li><a href="unit.html">Unit Converter</a></li>
+            <li><a href="bmi.html">BMI Calculator</a></li>
+            <li><a href="pregnancy.html">Pregnancy Due Date Calculator</a></li>
+            <li><a href="menstruation.html">Menstruation Cycle Calculator</a></li>
+            <li><a href="menopause.html">Menopause Calculator</a></li>
+            <li><a href="../image-tools/compressor.html">Image Compressor/Resizer</a></li>
+            <li><a href="../image-tools/passport.html">Passport Photo Generator</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="converter-section">
+            <h2>Convert Units</h2>
+            <div class="input-group">
+                <input type="number" id="unitAmount" value="1" min="0">
+                <select id="fromUnitType">
+                    <option value="length">Length</option>
+                    <option value="weight">Weight</option>
+                    <option value="temperature">Temperature</option>
+                </select>
+                <select id="fromUnit"></select>
+                <span>to</span>
+                <select id="toUnit"></select>
+            </div>
+            <button id="convertUnitBtn">Convert</button>
+            <div class="result">
+                <p>Converted Value: <span id="convertedUnitValue"></span></p>
+            </div>
+        </section>
+
+        <section class="ad-placeholder">
+            <!-- AdSense Ad will go here -->
+            <p>Advertisement</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Utility Hub</p>
+    </footer>
+
+    <script src="unit.js"></script>
+</body>
+</html>

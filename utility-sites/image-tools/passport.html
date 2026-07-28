@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Photo Generator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="passport.css">
+</head>
+<body>
+    <header>
+        <h1>Passport Photo Generator</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../calculators/currency.html">Currency Converter</a></li>
+            <li><a href="../calculators/unit.html">Unit Converter</a></li>
+            <li><a href="../calculators/bmi.html">BMI Calculator</a></li>
+            <li><a href="../calculators/pregnancy.html">Pregnancy Due Date Calculator</a></li>
+            <li><a href="../calculators/menstruation.html">Menstruation Cycle Calculator</a></li>
+            <li><a href="../calculators/menopause.html">Menopause Calculator</a></li>
+            <li><a href="compressor.html">Image Compressor/Resizer</a></li>
+            <li><a href="passport.html">Passport Photo Generator</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="tool-section">
+            <h2>Create Standard Passport Photos</h2>
+            <p>Upload your photo and we'll help you crop it to common passport dimensions (e.g., 2x2 inches / 50x50 mm).</p>
+            <div class="input-group">
+                <label for="passportImageUpload">Upload Image:</label>
+                <input type="file" id="passportImageUpload" accept="image/*">
+            </div>
+
+            <div class="options-group">
+                <label for="countryStandard">Select Country Standard:</label>
+                <select id="countryStandard">
+                    <option value="usa">USA (2x2 inches / 51x51 mm)</option>
+                    <option value="uk">UK (35x45 mm)</option>
+                    <option value="india">India (35x45 mm)</option>
+                    <option value="schengen">Schengen (35x45 mm)</option>
+                    <!-- Add more standards as needed -->
+                </select>
+            </div>
+
+            <button id="generatePassportPhotoBtn" disabled>Generate Passport Photo</button>
+            
+            <div class="image-preview">
+                <p>Original Image:</p>
+                <img id="originalPassportImage" src="#" alt="Original Image" style="max-width: 100%; height: auto; display: none;">
+                <p>Generated Passport Photo (Preview):</p>
+                <canvas id="passportCanvas" style="border: 1px solid #ddd; display: none;"></canvas>
+                <a id="downloadPassportLink" style="display: none;" download="passport_photo.jpg">Download Passport Photo</a>
+            </div>
+        </section>
+
+        <section class="ad-placeholder">
+            <!-- AdSense Ad will go here -->
+            <p>Advertisement</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Utility Hub</p>
+    </footer>
+
+    <script src="passport.js"></script>
+</body>
+</html>
