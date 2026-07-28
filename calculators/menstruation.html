@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menstruation Cycle Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="menstruation.css">
+</head>
+<body>
+    <header>
+        <h1>Menstruation Cycle Calculator</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="currency.html">Currency Converter</a></li>
+            <li><a href="unit.html">Unit Converter</a></li>
+            <li><a href="bmi.html">BMI Calculator</a></li>
+            <li><a href="pregnancy.html">Pregnancy Due Date Calculator</a></li>
+            <li><a href="menstruation.html">Menstruation Cycle Calculator</a></li>
+            <li><a href="menopause.html">Menopause Calculator</a></li>
+            <li><a href="../image-tools/compressor.html">Image Compressor/Resizer</a></li>
+            <li><a href="../image-tools/passport.html">Passport Photo Generator</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="calculator-section">
+            <h2>Track your Menstrual Cycle</h2>
+            <div class="input-group">
+                <label for="lastPeriodStart">Last Period Start Date:</label>
+                <input type="date" id="lastPeriodStart">
+            </div>
+            <div class="input-group">
+                <label for="cycleLength">Average Cycle Length (days):</label>
+                <input type="number" id="cycleLength" value="28" min="20" max="45">
+            </div>
+            <button id="calculateMenstruationBtn">Calculate</button>
+            <div class="result">
+                <p>Estimated Next Period: <span id="nextPeriodResult"></span></p>
+                <p>Estimated Fertile Window: <span id="fertileWindowResult"></span></p>
+            </div>
+        </section>
+
+        <section class="ad-placeholder">
+            <!-- AdSense Ad will go here -->
+            <p>Advertisement</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Utility Hub</p>
+    </footer>
+
+    <script src="menstruation.js"></script>
+</body>
+</html>

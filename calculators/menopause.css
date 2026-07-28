@@ -1,0 +1,25 @@
+.info-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.info-section h2, .info-section h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.info-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.info-section li {
+    margin-bottom: 5px;
+}
+
+.info-section p {
+    line-height: 1.6;
+}

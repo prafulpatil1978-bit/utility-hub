@@ -1,0 +1,68 @@
+.calculator-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px; /* Limit width for better readability */
+}
+
+.input-group label {
+    min-width: 180px; /* Adjust label width for better alignment */
+    text-align: right;
+}
+
+.input-group input[type="date"], .input-group input[type="number"], .calculator-section button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    flex-grow: 1; /* Allow inputs to grow */
+}
+
+.calculator-section button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculator-section button:hover {
+    background-color: #218838;
+}
+
+.result p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left in column layout */
+    }
+
+    .input-group label {
+        width: 100%;
+        text-align: left;
+    }
+
+    .input-group input[type="date"], .input-group input[type="number"] {
+        width: calc(100% - 22px); /* Account for padding and border */
+    }
+}
